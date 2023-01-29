@@ -44,8 +44,6 @@
 			echo "<td>".$person['City']."</td>";
 			
 			echo "<td>";
-			// echo "<a href='form-edit.php?id=".$person['id']."'>Edit</a> | ";
-			// echo "<a href='hapus.php?id=".$person['id']."'>Hapus</a>";
 			echo "</td>";
 			
 			echo "</tr>";
