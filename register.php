@@ -9,7 +9,7 @@ if(isset($_POST['register'])){
     $address = $_POST['address'];
     $city = $_POST['city'];
 
-    $sql = "INSERT INTO persons (FirstName, LastName, Address, City) VALUE ('$firstName', '$lastName', '$address', '$city')";
+    $sql = "INSERT INTO account (firstName, lastName, address, city) VALUE ('$firstName', '$lastName', '$address', '$city')";
 
     $query = mysqli_query($db, $sql);
 

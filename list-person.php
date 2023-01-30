@@ -26,24 +26,27 @@
 			<th>Last Name</th>
 			<th>Address</th>
 			<th>City</th>
+			<th>Action</th>
 		</tr>
 	</thead>
 	<tbody>
 		
 		<?php
-		$sql = "SELECT * FROM persons";
+		$sql = "SELECT * FROM account";
 		$query = mysqli_query($db, $sql);
-		
-		while($person = mysqli_fetch_array($query)){
+
+		while($account = mysqli_fetch_array($query)){
 			echo "<tr>";
 			
-			echo "<td>".$person['ID']."</td>";
-			echo "<td>".$person['FirstName']."</td>";
-			echo "<td>".$person['LastName']."</td>";
-			echo "<td>".$person['Address']."</td>";
-			echo "<td>".$person['City']."</td>";
+			echo "<td>".$account['id']."</td>";
+			echo "<td>".$account['firstName']."</td>";
+			echo "<td>".$account['lastName']."</td>";
+			echo "<td>".$account['address']."</td>";
+			echo "<td>".$account['city']."</td>";
 			
 			echo "<td>";
+			echo "<a href='edit-form.php?id=".$account['id']."'>Edit</a> | ";
+			echo "<a href='delete.php?id=".$account['id']."'>Hapus</a>";
 			echo "</td>";
 			
 			echo "</tr>";

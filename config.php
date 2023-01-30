@@ -1,8 +1,8 @@
 <?php
-$host = "localhost:8889";
+$host = "localhost";
 $dbusername = "root";
 $dbpassword = "root";
-$database_name = "tesdb";
+$database_name = "user";
 
 try{
     $db = mysqli_connect($host, $dbusername, $dbpassword, $database_name);
