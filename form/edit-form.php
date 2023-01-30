@@ -17,20 +17,8 @@ if( mysqli_num_rows($query) < 1 ){
 }
 
 ?>
-
-
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Edit Form</title>
-</head>
-
-<body>
-	<header>
-		<h3>Edit Account Form</h3>
-	</header>
 	
-	<form action="proses-edit.php" method="POST">
+<form action="edit.php" method="POST">
 		
 		<fieldset>
 			
@@ -53,13 +41,8 @@ if( mysqli_num_rows($query) < 1 ){
 			<input type="text" name="city" placeholder="City" value="<?php echo $account['city'] ?>" />
 		</p>
 		<p>
-			<input type="submit" value="Simpan" name="simpan" />
+			<input type="submit" value="save" name="save" />
 		</p>
 		
 		</fieldset>
-		
-	
 	</form>
-	
-	</body>
-</html>

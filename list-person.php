@@ -45,7 +45,7 @@
 			echo "<td>".$account['city']."</td>";
 			
 			echo "<td>";
-			echo "<a href='edit-form.php?id=".$account['id']."'>Edit</a> | ";
+			echo "<a href='edit-page.php?id=".$account['id']."'>Edit</a> | ";
 			echo "<a href='delete.php?id=".$account['id']."'>Hapus</a>";
 			echo "</td>";
 			
