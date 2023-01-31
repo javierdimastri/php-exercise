@@ -46,7 +46,7 @@
 			
 			echo "<td>";
 			echo "<a href='edit-page.php?id=".$account['id']."'>Edit</a> | ";
-			echo "<a href='delete.php?id=".$account['id']."'>Hapus</a>";
+			echo "<a href='delete.php?id=".$account['id']."' onClick=\"javascript:return confirm('are you sure you want to delete this?');\">Delete</a>";
 			echo "</td>";
 			
 			echo "</tr>";
